@@ -23,7 +23,7 @@ export const usePublishResult = (resultData) => {
     try {
       if (!username) throw new Error("Couldn't get Result");
       await postServerData(
-        `${process.env.REACT_APP_SERVER_HOSTNAME}/api/result`,
+        `$https://cisquizapp.onrender.com/api/result`,
         resultData,
         (data) => data
       );
