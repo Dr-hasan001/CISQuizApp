@@ -21,7 +21,7 @@ export const useFetchQuestion = () => {
     (async () => {
       try {
         const [{ questions, answers }] = await getServerData(
-          `$https://cisquizapp.onrender.com/api/questions`,
+          `https://cisquizapp.onrender.com/api/questions`,
           (data) => data
         );
 
