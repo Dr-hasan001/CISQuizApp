@@ -1,0 +1,242 @@
+
+/** Safe Copy
+.container ol li {
+    font-size: 5rem;
+    color: #cecece;
+
+}
+
+#form .btn{
+    padding: 1rem 1.7rem;
+    width: 25% ;
+    border: none;
+    border-radius: .1em;
+    align-self: center;
+    font-size: 1.2em;
+    background-color:     #15a34c
+    ;
+    
+
+}
+#form .btn:hover {
+    background-color: rgb(112, 187, 115);}
+
+.start{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.start .start{
+    padding: .2em 1.7em;
+    border: none;
+    border-radius: .1rem;
+    font-size: 1rem;
+    color:#202020;
+    text-decoration: none;
+    background-color:yellow
+}
+
+
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+    
+}
+
+#form .userid{
+    padding: 1rem 2rem;
+    width:50%;
+    border: none;
+    border-radius: 3px;
+    transition: border-color 0.15s, box-shadow 0.3s;
+    margin: 2rem auto;
+ 
+    
+}
+#form .userid:focus{
+    border-color:#7db0fb;
+    outline: 0;
+    box-shadow: 0 0 0 4px rgb(94, 156, 97);
+}
+
+@media (max-width: 480px) {
+
+  #form .userid{
+    margin:1rem auto;
+
+  }}
+    */
+
+    .wrapper{
+      background-color: #231b1b;
+      background-repeat: no-repeat;
+      height: 100vh;
+    }
+
+    .container ol li {
+        font-size: 5rem;
+        color: #cecece;
+      }
+      .container span {
+        color:rgb(11, 76, 142) ;
+      }
+      
+      #form .btn, .container.btn.next {
+        padding: 0.8rem 1.8rem;
+        width: 25%;
+        border: none;
+        border-radius: 8.1em;
+        align-self: center;
+        font-size: 1.2em;
+        background-color: black;}
+      
+      #form .btn:hover {
+        background-color: rgb(112, 187, 115);
+      }
+      
+      .start {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+      }
+      
+      .start .start, .container .btn.prev {
+        padding: .2em 1.7em;
+        border: none;
+        border-radius: .1rem;
+        font-size: 1rem;
+        color:#202020;
+        text-decoration: none;
+        background-color:yellow
+      }
+      
+      #form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20rem;
+        backdrop-filter: blur(20px);
+
+        
+      }
+      
+      #form .userid {
+        padding: 1.15rem 2.5rem;
+        width: 75%;
+        border: none;
+        border-radius: 10px;
+        transition: border-color 0.15s, box-shadow 0.3s;
+        margin: 2rem auto;
+        color: #222;
+
+
+    }
+      
+      #form .userid:focus {
+        border-color: #7db0fb;
+        outline: 0;
+        box-shadow: 0 0 0 4px rgb(94, 156, 97);
+      }
+      
+      /* Media Queries for Responsive Design */
+
+/********************************4K displays************************************/
+  
+
+
+     
+      
+      
+      
+      @media (max-width: 480px) {
+  
+        .container, .container label   {
+            
+          height: fit-content;
+        }
+
+
+
+        #form .btn {
+          width: 50%;
+          font-size: 1rem;
+        }
+      
+        #form .userid {
+          width: 80%;
+        }
+      
+
+      
+        .start .start {
+          font-size: 1rem;
+        }
+      }
+      
+      .container .btn.prev {
+        border: none;
+        border-radius: 0.3rem;
+        font-size: 1rem;
+        font-weight: 900;
+        color: #c34444;
+        text-decoration: none;
+        background-color: rgb(255 232 0 / 92%);
+      }
+      .container .btn.prev:hover {
+        background-color:rgb(188, 190, 19);
+        color: #202020;
+      }
+      @media (max-width: 768px) {
+        .container ol li {
+          font-size: 3rem;
+        }
+      
+        #form .btn {
+          width: 50%;
+          font-size: 0.9rem;
+        }
+      
+        #form .userid {
+          width: 70%;
+          margin:0.8rem auto;
+        }
+      
+        .start {
+          padding: 1rem;
+        }
+      
+        .start .start {
+          font-size: 0.9rem;
+        }
+      }
+
+
+      @media (max-width: 1200px) {
+        .container ol li {
+          font-size: 4rem;
+        }
+      
+        #form .btn {
+          width: 35%;
+          font-size: 1rem;
+        }
+      
+        #form .userid {
+          width: 60%;
+          margin:2rem auto;
+        }
+      }
+
+      @media (max-width: 2560px) {
+        .container .btn.prev{
+          border-radius: 1.3rem;
+    
+          font-size: 2rem;
+      }
+      }
+
+      

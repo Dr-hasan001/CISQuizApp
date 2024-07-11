@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    z-index: 2;
+}
+
+
+body{
+    background-color: #B8DFEE;
+}
+
+
+span{
+    color: rgb(11, 76, 142);
+}
+
+
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 4rem 8% 0;
+    gap: 10;
+    position: relative;
+}   
+
+.homeContent {
+    max-width: 40rem;
+}
+    
+.homeContent h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+    
+.homeContent h3{
+    font-size: 1.5rem;
+    color:#000000;
+}
+
+.homeContent p {
+    font-size: 1rem;
+    margin: 1rem 0 1.8rem;
+    color: #000000;
+
+}    
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border: 2px solid #1743e3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    background: #1743e3 ;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #eaeaea;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn:hover{
+    background: transparent;
+    color: #1743e3;
+}
+
+.homeImg{
+    position: relative;
+    width: 28rem;
+    height: 28rem;
+    transform: rotate(45deg);
+    right: -7%;
+}
+
+.homeImg .rhombus{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #eaeaea;
+    border: 25px solid #1743e3;
+    box-shadow: -15px 15px 15px rgba(0, 0, 0, .2);
+    z-index: 1;
+}
+
+.homeImg .rhombus img{
+    position: absolute;
+    top: -5rem;
+    left: -2.5rem;
+    max-width: 150%;
+    transform: rotate(-45deg);
+}
+
+.home .rhombus2{
+    position: absolute;
+    top: -25%;
+    right: -25%;
+    height: 43.75rem;
+    width: 43.75rem;
+    background-color: #1743e3;
+    transform: rotate(45deg);
+    z-index:  -1;
+    display: none;
+
+}
+
+
+    /*******************************768p Displays*********************************/
+
+    @media (max-width: 768px) {
+        .home .homeImg {
+            width: 300px;
+            height: 300px;
+            right: -20%;
+            top: 14%;}
+        
+        
+        
+        
+            .homeImg .rhombus img {
+            top: -35px;
+            left: -17px;
+            max-width: 122%
+        }
+        
+        .home {
+            display: block;
+            padding: 120px 17% ;}
+        
+        
+        .homeImg .rhombus {
+            width: 75%;
+            height: 75%;}
+
+
+            .home .rhombus2{
+                display: none;
+            }
+    }
+/*******************************480p Displays*********************************/
+
+    @media (max-width: 480px) {
+
+        
+        .home{
+            display: block;
+            text-align: center;
+            padding: 6rem 2rem;
+        }
+    
+         .home .homeImg {
+            width: 300px;
+            height: 299px;
+            right: -9%;
+            top: 14%;
+        }
+    .home h1 {
+        font-size: 2rem;
+    }
+    
+    
+        }
+    /*******************************950p Displays*********************************/
+
+    @media (min-width: 950px) {
+        .homeImg .rhombus__-SR7c {
+            width: 80%;
+            height: 75%;
+        }
+    
+    
+    .rhombus2 {
+        position: absolute;
+        top: -20%;
+        right: -33%;
+    
+    }
+    }
+
+/*******************************1024p Displays*********************************/
+@media (min-width: 1024px) {
+
+    .home {
+        padding: 50px 10%;
+        justify-content: space-around;
+    }
+    
+    .home .homeContent {
+        max-width: 25rem;}
+    
+        .homeImg .rhombus {
+        width: 100%;
+        height: 90%;}
+    
+    .home .homeImg {
+        width: 20rem;
+        height: 20rem;
+        right: -4%;}
+    
+    
+        .homeImg .rhombus img {
+            top: -3rem;
+            left: -1rem;
+        max-width: 113%;
+    }
+    
+    .home p {
+        font-size: 1.5rem;}
+    
+    .home .btn {
+        font-size: 1.15rem;
+     }
+
+     .home .rhombus2 {
+
+        height: 700px;
+        width:700px;
+    }
+}
+/*******************************2k Displays*********************************/
+@media (min-width: 1440px) {
+    .home h1 {
+        font-size: 5rem;
+        line-height: 1.2;
+    }
+    .home h3 {
+        font-size: 3rem;}
+    
+    .home p {
+        font-size: 1.5rem;}
+    
+    .home .btn{
+        font-size: 1.5rem;
+    }}
+
+    /*******************************4K Displays*********************************/
+
+@media (min-width: 2560px) {
+    .homeImg .rhombus {
+        width: 150%;
+        height: 130%;
+        left: -12.5rem;
+        border: 50px solid #1743e3;
+    
+    }
+
+    .homeImg .rhombus img{
+        top: -45%;
+        right: -11%;
+        height: 43rem;
+        width: 43rem;
+        z-index: -1;
+    }
+
+
+    .home .rhombus2{
+        top: -28%;
+        right: -34%;
+        height: 1440px;
+        width: 1440px;
+    }
+
+
+    .home .btn{
+        font-size: 2.5rem;
+    }
+
+    .home {
+        padding: 50px 4% 0;
+    }
+    
+        .home h1 {
+            font-size: 8rem;}
+    
+        .home h3 {
+            font-size: 4rem;
+        }
+    
+        .home p {
+            font-size: 2.6rem;
+            margin: 3.2rem 0rem;
+        }
+        .home .homeContent {
+            max-width:40rem;}
+    
+        .home .homeImg {
+            width: 25rem;
+            height: 25rem;}
+    
+}
+   
+
+
+  

@@ -1,0 +1,27 @@
+h2{
+  color: black;
+}
+
+.header{
+  margin: 25rem 0 1rem 0;
+}
+
+a {
+
+}
+
+.socialMedia a{
+  font-size: 4rem;
+  padding: 2rem;
+}
+
+.face{
+  color: rgb(62, 62, 243);
+}
+
+.insta {
+  color: rgb(247, 54, 54);
+}
+.tiktok{
+  color: #000;
+}
