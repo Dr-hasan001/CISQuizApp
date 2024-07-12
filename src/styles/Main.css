@@ -98,6 +98,7 @@
       
       #form .btn:hover {
         background-color: rgb(112, 187, 115);
+        transition: 0.3s
       }
       
       .start {
