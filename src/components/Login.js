@@ -74,7 +74,7 @@ const Login = () => {
             type="submit"
             onClick={handleLoginAndStartQuiz}
           >
-            Log in
+            Login
           </button>
         </form>
 
