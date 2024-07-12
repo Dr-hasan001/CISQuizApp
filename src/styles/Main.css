@@ -122,9 +122,11 @@
         justify-content: center;
         margin-top: 20rem;
         backdrop-filter: blur(20px);
-          color:#fff;
+      }
 
-        
+
+      #form h2{
+        color: #fff;
       }
       
       #form .userid {
