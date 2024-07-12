@@ -92,7 +92,9 @@
         border-radius: 8.1em;
         align-self: center;
         font-size: 1.2em;
-        background-color: black;}
+        background-color: black;
+          color:#fff;
+      }
       
       #form .btn:hover {
         background-color: rgb(112, 187, 115);
@@ -120,6 +122,7 @@
         justify-content: center;
         margin-top: 20rem;
         backdrop-filter: blur(20px);
+          color:#fff;
 
         
       }
