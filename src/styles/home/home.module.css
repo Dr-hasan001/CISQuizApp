@@ -35,6 +35,7 @@ span{
 
 .homeContent {
     max-width: 40rem;
+    padding-top:4rem;
 }
     
 .homeContent h1 {
@@ -190,12 +191,11 @@ span{
 @media (min-width: 1024px) {
 
     .home {
-        padding: 50px 10%;
+        padding: 2rem 4%;
         justify-content: space-around;
     }
     
-    .home .homeContent {
-        max-width: 25rem;}
+
     
         .homeImg .rhombus {
         width: 100%;
