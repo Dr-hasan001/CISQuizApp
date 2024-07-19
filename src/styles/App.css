@@ -346,102 +346,104 @@ input[type=radio]:checked ~ .text-primary{
   
   /* Media Queries for Responsive Design */
 
+  /**********************************1200px display***********************************/
+  @media (min-width: 1200px) {
 
+    ul li .check{
+      height: 2.5rem;
+          width: 2.5rem;
+          top: 3rem;
+          left: 1rem;}
 
+ul li .check::before{
+  height: 1.5rem;
+  width: 1.5rem;
+  top: 0.2rem;
+  left: 0.2rem;}
 
-
-
-  /****************************************768px display******************************/
-  @media (max-width: 480px) {
-    .container {
-      font-size: 1.8rem;
-      max-width: 25rem;
-    }
-  
-    .ques{
-      font-size: 2rem;
-    }
-  
-    .container .title {
-      font-size: 2.5rem;
-    }
-  
-  
-    ul li .check {
-      
-      width: 2.16rem;
-      left: 1rem;
-      top:2.5rem;
-    }
-  
-  
-  ul li .check::before {
-    display: block;
-    position: absolute;
-    content: '';
-    border-radius: 100%;
-    height: 1.20rem;
-    width: 1.3rem;
-    top: 0.12rem;
-    left: 0.15rem
   }
   
-  
-  ul li label {
-      font-size: 2rem;
-      padding: 2rem 1rem 0rem 2.5rem;}
-  
-    }
-  
-
-
-
-  /**********************************1200px display***********************************/
-
-
   @media (max-width: 1200px) {
     .container {
       width: 90%;
     }
-  
-/*     .container .title {
-      font-size: 5rem;
-    } */
-  
-    .container .questions .qid {
-      padding: 8rem 1rem;
+      .container .questions .qid {
+        padding: 8rem 1rem;
+      }
+      
+      .container .questions{
+        padding: 0rem 1rem 1rem 1rem
+      }
+      
+      .container .grid {
+        font-size: 2rem;
+      }
+      
+      ul li {
+        height: 90px;
+        padding: 0rem
+      }
+      
+      ul li label {
+        font-size: 3rem;
+        padding: 1.7rem 0rem 1rem 3.5rem;
+        
+      }
+      
+      ul li .check {
+        height: 2.8rem;
+        width: 2.5rem;
+        top: 2rem;
+        left: 0rem;
+      }
     }
+      /**********************************480px display***********************************/
 
-    .container .questions{
-      padding: 0rem 1rem 1rem 1rem
-  }
-  
-    .container .grid {
-      font-size: 2rem;
+    @media (max-width: 480px) {
+      .container {
+        font-size: 1.8rem;
+        max-width: 25rem;
+      }
+    
+      .ques{
+        font-size: 2rem;
+      }
+    
+      .container .title {
+        font-size: 2.5rem;
+      }
+    
+    
+      ul li .check {
+        
+        width: 2.16rem;
+        left: 1rem;
+        top:2.5rem;
+      }
+    
+    
+    ul li .check::before {
+      display: block;
+      position: absolute;
+      content: '';
+      border-radius: 100%;
+      height: 1.20rem;
+      width: 1.3rem;
+      top: 0.12rem;
+      left: 0.15rem
     }
-  
-    ul li {
-      height: 90px;
-      padding: 0rem
-    }
-  
+    
+    
     ul li label {
-      font-size: 3rem;
-      padding: 1.7rem 0rem 1rem 3.5rem;
-
-    }
+        font-size: 2rem;
+        padding: 2rem 1rem 0rem 2.5rem;}
+    
+      }
+    
   
-    ul li .check {
-      height: 2.8rem;
-      width: 2.5rem;
-      top: 2rem;
-      left: 0rem;
-  }
-    }
-
   /******************************1024 Displays**************************************/
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   ul li .check::before {
     height: 1.8rem;
     width: 1.5rem;
@@ -449,8 +451,8 @@ input[type=radio]:checked ~ .text-primary{
     left: 0.19rem;
   }
 }
- /*/////////**/
-@media (max-width: 768px) {
+  /****************************************768px display******************************/
+  @media (max-width: 768px) {
   .container {
     width: 95%;
   }
