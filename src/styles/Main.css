@@ -75,6 +75,7 @@
       background-color: #231b1b;
       background-repeat: no-repeat;
       height: 100vh;
+      overflow: hidden;
     }
 
     .container ol li {
