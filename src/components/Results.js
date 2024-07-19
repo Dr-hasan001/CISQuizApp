@@ -15,7 +15,7 @@ export default function Results() {
   } = useSelector((state) => state);
 
   //SETTING THE TOTAL NUMBER OF POINTS.....
-  const rightAnswerScore = 20;
+  const rightAnswerScore = 2;
   const totalPoints = queue.length * rightAnswerScore;
   const earnPoints = earnPoints_Number(result, answers, rightAnswerScore);
   const flag = flagResult(totalPoints, earnPoints);
