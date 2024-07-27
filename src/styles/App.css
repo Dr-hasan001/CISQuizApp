@@ -372,7 +372,9 @@ ul li .check::before{
       }
       
       .container .questions{
-        padding: 0rem 1rem 1rem 1rem
+        padding: 0rem 1rem 1rem 1rem;
+	font-size: 1.5rem;
+	      
       }
       
       .container .grid {
